@@ -1,13 +1,42 @@
+// OBJETOS
+
+object cajita{
+	var objeto = remera
+	method cambiarObjeto(unObjeto){
+		objeto = unObjeto
+	}
+	method peso() = objeto.peso() + 400
+	method material() = cobre
+	method color() = rojo
+}
+
 object remera{
 	method peso() = 800
 	method material() =	lino
 	method color() = rojo
 }
 
+object arito{
+	method peso() = 180
+	method material() =	cobre
+	method color() = celeste
+}
+
 object pelota{
 	method peso() = 1300
 	method material() =	cuero
 	method color() = pardo
+}
+
+object banquito{
+	var color = naranja
+	
+	method peso() = 1700
+	method material() =	cuero
+	method color() = color
+	method cambiarColor(nuevoColor){
+		color = nuevoColor
+	}
 }
 
 object biblioteca{
@@ -43,6 +72,7 @@ object placa{
 	
 }
 
+//MATERIALES
 
 object cobre{
 	method esBrillante() = true
@@ -64,6 +94,8 @@ object cuero{
 	method esBrillante() = false
 }
 
+//COLORES
+
 object rojo{
 	method esFuerte() = true
 }
@@ -80,4 +112,7 @@ object pardo{
 	method esFuerte() = false
 }
 
+object naranja{
+	method esFuerte() = true
+}
 
