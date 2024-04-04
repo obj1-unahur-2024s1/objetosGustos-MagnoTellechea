@@ -1,3 +1,17 @@
+import objetos.*
+
 object rosa{
-	//prueba
+	method leGusta(objeto) = objeto.peso() < 2000
+}
+
+object estefania{
+	method leGusta(objeto) = objeto.color().esFuerte()
+}
+
+object luisa{
+	method leGusta(objeto) = objeto.material().esBrillante()
+}
+
+object juan{
+	method leGusta(objeto) = not objeto.color().esFuerte() || objeto.peso() >= 1200 && objeto.peso() <= 1800  
 }
